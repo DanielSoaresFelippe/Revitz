@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Revitz</title>
+<!-- Styles -->
+    <link rel="stylesheet" href="css/login.css">
+<!-- font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-menu">
+            <div class="logo">
+                <img src="images/revitz-Logo.png" alt="Logo" width="140">
+            </div>
+        </div>
+        <div class="Menu-container">
+            <nav class="menu">
+                <a href="index.html#como-funciona">Como Funciona</a>
+                <a href="index.html#quem-somos">Quem Somos</a>
+                <a href="index.html#campanhas">Campanhas</a>
+                <a href="index.html#ajuda">Ajuda</a>
+            </nav>
+        </div>
+        <div class="button">
+            <button class="btn sign-up"><a href="index.html">Voltar a página principal</a></button>
+        </div>
+
+    </header>
+    <section class="pagina-login">
+        <div class="container" id="container">
+            <div class="form-container criar-conta">
+                <form>
+                    <h1>Criar Conta</h1>
+                    <div class="icons-sociais">
+                        <a href="#" class="icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <span>ou use seu e-mail para cadastro</span>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <button>Criar conta</button>
+                </form>
+            </div>
+            <div class="form-container fazer-login">
+                <form>
+                    <h1>Fazer login com</h1>
+                    <div class="icons-sociais">
+                        <a href="#" class="icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <span>ou use sua senha e e-mail</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button formaction="#">Login</button>
+                </form>
+            </div>
+            <div class="alternar-container">
+                <div class="alternar">
+                    <div class="alternar-painel alternar-esquerda">
+                        <h1>Bem-vindo!</h1>
+                        <p>Tem uma conta?<br>Faça login para usar<br>todos os recursos do site!</p>
+                        <button class="trocar" id="login">Fazer login</button>
+                    </div>
+                    <div class="alternar-painel alternar-direita">
+                        <h1>Olá, Amigo!</h1>
+                        <p>Ainda não tem uma conta?<br>Cadastre-se e faça a diferença<br>com suas doações!</p>
+                        <button class="trocar" id="registrar">Criar conta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fas fa-envelope"></i></a> <!--plataformarevitz@gmail.com-->
+            </div>
+            
+            <div class="footer-text">
+                <p class="p1">Copyright © 2024 Revitz. Todos os direitos reservados.</p>
+                <p class="p2">Entidade sem fins lucrativos</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

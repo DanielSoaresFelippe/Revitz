@@ -1,0 +1,97 @@
+@import url(head.css);
+.contact {
+    background-color: #286c04;
+    color: #fff;
+    font-family: var(--font-title);
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.central-content {
+    padding: 40px;
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+.central-content h2 {
+    color: #768E6B;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.grid-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.grid-cards img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 40px;
+}
+
+.btn-campaign {
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #286c04;
+    color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-campaign:hover {
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+}
+
+.button-todas-as-campanhas {
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+    width: 140px;
+    height:40px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 4.8px 4px #00000040;
+    background: #277C04;
+    color: #fff;
+
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em
+    
+
+}
+.button-todas-as-campanhas:hover{
+    box-shadow: 0px 2px 4.8px 4px #00000090;
+    transition: .5s
+}

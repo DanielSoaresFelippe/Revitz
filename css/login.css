@@ -1,0 +1,32 @@
+@import './footer.css';
+@import './loginContainer.css';
+@import './header.css';
+
+:root {
+    --cor-fundo-header: #fff;
+    --font-primary:"Ubuntu", sans-serif ;
+    --font-title:"Poppins", sans-serif;
+    --radio-color: #3afd44;
+    --text-color: #768E6B;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #ffff;
+}

@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #fff;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    padding: 14px;
+}
+
+.logo-menu {
+    display: flex;
+    align-items:center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    padding-top: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.menu a:hover {
+    color: #4CAF50;
+}
+.Menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.button {
+    display: flex;
+    padding-top: 10px;
+    padding-right:3em;
+}
+
+.btn {
+    padding: 8px 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.sign-up {
+    background-color: #286c04;
+    color: #fff;
+}
+
+.sign-up:hover {
+    background-color: #45a049;
+}
+/*header tablet*/
+@media (max-width: 768px){
+    .Menu-container,
+    .button{
+        display: none!important;
+    }
+}

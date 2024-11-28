@@ -1,0 +1,13 @@
+@import './central-content.css';
+@import './head.css';
+@import './slider2.css';
+@import './carousel-infinity.css';
+@import './progressbar.css';
+@import './footer.css';
+
+.content-carousel-infinity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px
+}

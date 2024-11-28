@@ -1,37 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <title>Revitz</title>
-
-    <link rel="stylesheet" href="head.css">
-
+<!-- Styles -->
+    <link rel="stylesheet" href="css/global.css">
+<!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <script src="./scripts/carousel-infinity.js" defer></script>
 </head>
+
 <body>
-    <header class="cabecalho">
+    <header class="header">
         <div class="logo-menu">
             <div class="logo">
-                <img src="images/revitz-Logo.png" alt="Logo" width="90">
+                <img src="images/revitz-Logo.png" alt="Logo" width="140">
             </div>
+        </div>
+        <div class="Menu-container">
             <nav class="menu">
-                <a href="#">Como Funciona</a>
-                <a href="#">Quem Somos</a>
-                <a href="#">Dicas</a>
-                <a href="#">Ajuda</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#quem-somos">Quem Somos</a>
+                <a href="#campanhas">Campanhas</a>
+                <a href="#ajuda">Ajuda</a>
             </nav>
         </div>
-        <div class="botoes">
-            <button class="btn">Login</button>
-            <button class="btn inscrever">Cadastre-se</button>
+        <div class="button">
+            <button class="btn"><a href="login.html">Login</a></button>
+            <button class="btn sign-up">Cadastre-se</button>
         </div>
+
     </header>
+
+    <!------------------------------------------------------------------------>
+
+    <div class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="images/1.png" alt="...">
+                <img class="img-mobile" src="images/1-medio.png" alt="..."> 
+                <img class="img-pocket" src="images/1-mobile.png" alt="">
+                <div class="legenda">
+                    <h1>DOAÇÃO SEM DINHEIRO</h1>
+                    <p>Transforme roupas e brinquedos que você não usa</br>mais em esperança para quem precisa.</br>Doe e faça a difereça!</p>
+                    <button class="doar-btn">Doe Aqui!</button>
+                </div>
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="images/2.png" alt="...">
+                <img class="img-mobile" src="images/2-medio.png" alt="...">
+                <img class="img-pocket" src="images/2-mobile.png" alt="">
+                <div class="legenda">
+                    <h1>CUIDE DE QUEM JÁ CUIDOU TANTO</h1>
+                    <p>Os idosos nos asilos merecem carinho e conforto. Doe roupas, mantas,</br>produtos de higiene e outros itens essenciais. Pequenos gestos podem </br>trazer um grande sorriso a quem já fez tanto por nós.</p>
+                    <button class="doar-btn">Doe Aqui!</button>
+                </div>
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="images/3.png" alt="...">
+                <img class="img-mobile" src="images/3-medio.png" alt="...">
+                <img class="img-pocket" src="images/3-mobile.png" alt="">
+                <div class="legenda">
+                    <h1>AJUDE COM UM PIX E TRANSFORME VIDAS</h1>
+                    <p>Nem sempre é possível doar fisicamente, mas sua contribuição financeira </br>também faz a diferença! Apoie projetos sociais diretamente por PIX ou cartão, </br>e ajude a transformar vidas com alguns cliques.</p>
+                    <button class="doar-btn">Doe Aqui!</button>
+                </div>
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------>
+
+    <div class="contact">
+        <p class="title">
+            Transforme o que não usa mais em esperança. Doe roupas,<br> brinquedos e muito mais! Entre em contato:
+        </p>
+    </div>
+
+    <div class="central-content" id="como-funciona">
+        <h2>Como Funciona a Campanha Revitz</h2>
+        <p class="description">
+            Na Revitz, acreditamos que todos têm algo a oferecer, seja uma peça de roupa, um brinquedo, um livro
+            ou até mesmo um gesto de solidariedade financeira. Nossa campanha foi criada para facilitar o processo
+            de doação, seja em itens físicos ou em contribuições monetárias, sempre com o objetivo de transformar vidas.
+        </p>
+
+        <div class="grid-cards">
+            <div class="card">
+                <img src="icons/1-cadastrocampanha-icon.png" alt="Cadastro">
+                <h4>Cadastro da Campanha</h4>
+                <p>Inscreva-se e escolha o tipo de doações que deseja arrecadar (roupas, brinquedos ou dinheiro via
+                    PIX/cartão).</p>
+            </div>
+
+            <div class="card">
+                <img src="icons/2-divulgacao-icon.png" alt="Divulgação">
+                <h4>Divulgação</h4>
+                <p>Receba material de apoio para divulgar sua campanha e envolva amigos e familiares nessa ação
+                    solidária.</p>
+            </div>
+
+            <div class="card">
+                <img src="icons/3-arrecadacaodoacoes-icon.png" alt="Arrecadação">
+                <h4>Arrecadação de Doações</h4>
+                <p>Defina um ponto de coleta para receber as doações físicas ou use nosso sistema seguro para doações
+                    financeiras.</p>
+            </div>
+
+            <div class="card">
+                <img src="icons/4-distribuicao-icon.png" alt="Distribuição">
+                <h4>Distribuição</h4>
+                <p>Entregue os itens diretamente a quem precisa ou envie para instituições parceiras com suporte
+                    logístico necessário.</p>
+            </div>
+        </div>
+
+        <button class="btn-campaign">Criar minha Campanha</button>
+    </div>
+    <div class="container"> 
+        <h2 class="howAbout" id="quem-somos">Quem Somos</h2>
+        <p class="howAbout-description">A <span class="description-logo">Revítz</span> é a primeira plataforma dedicada à criação de campanhas de doações emergenciais. Sem fins lucrativos, intermediamos doadores e causas, para possibilitar que pessoas de todo o país se unam em prol de ajudar quem necessita.</p>
+    </div>
+    <div class="container-quem-somos">
+        
+            <video class="video"controls>
+                <source src="/images/VIDEO-2024-11-06-10-16-53.mp4"type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+    </div>
+    <div class="content-carousel-infinity" id="campanhas">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="images/bfaa30a6916bf199491222e942919bdb.png" alt="img" draggable="false"></div>
+                    <h2>Sociedade de São Vicente de Paulo</h2>
+                    <div class="locate">
+                        <img src="images/2nLvm6tTwmS4koSaaaPwXLuxQ5W 1.svg" alt="">
+                        <span class="locate-text"> Itabira - MG</span>
+                    </div>
+                    <p>
+                        O Lar de Ozanam aceita doações de itens essenciais para os idosos que acolhe, como roupas, produtos de higiene pessoal, fraldas geriátricas, alimentos não perecíveis, e roupas de cama (lençóis e cobertores). Essas doações ajudam a garantir o bem-estar e conforto dos idosos em situação de vulnerabilidade.
+                    </p>
+                    <button>Doar</button>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:70%;">
+                            <p class="porcentInfo"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="images/bfaa30a6916bf199491222e942919bdb.png" alt="img" draggable="false"></div>
+                    <h2>Sociedade de São Vicente de Paulo</h2>
+                    <div class="locate">
+                        <img src="images/2nLvm6tTwmS4koSaaaPwXLuxQ5W 1.svg" alt="">
+                        <span class="locate-text"> Itabira - MG</span>
+                    </div>
+                    <p>
+                        O Lar de Ozanam aceita doações de itens essenciais para os idosos que acolhe, como roupas, produtos de higiene pessoal, fraldas geriátricas, alimentos não perecíveis, e roupas de cama (lençóis e cobertores). Essas doações ajudam a garantir o bem-estar e conforto dos idosos em situação de vulnerabilidade.
+                    </p>
+                    <button>Doar</button>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;">
+                            <p class="porcentInfo"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="images/bfaa30a6916bf199491222e942919bdb.png" alt="img" draggable="false"></div>
+                    <h2>Sociedade de São Vicente de Paulo</h2>
+                    <div class="locate">
+                        <img src="images/2nLvm6tTwmS4koSaaaPwXLuxQ5W 1.svg" alt="">
+                        <span class="locate-text"> Itabira - MG</span>
+                    </div>
+                    <p>
+                        O Lar de Ozanam aceita doações de itens essenciais para os idosos que acolhe, como roupas, produtos de higiene pessoal, fraldas geriátricas, alimentos não perecíveis, e roupas de cama (lençóis e cobertores). Essas doações ajudam a garantir o bem-estar e conforto dos idosos em situação de vulnerabilidade.
+                    </p>
+                    <button>Doar</button>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:40%;">
+                            <p class="porcentInfo"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="images/bfaa30a6916bf199491222e942919bdb.png" alt="img" draggable="false"></div>
+                    <h2>Sociedade de São Vicente de Paulo</h2>
+                    <div class="locate">
+                        <img src="images/2nLvm6tTwmS4koSaaaPwXLuxQ5W 1.svg" alt="">
+                        <span class="locate-text"> Itabira - MG</span>
+                    </div>
+                    <p>
+                        O Lar de Ozanam aceita doações de itens essenciais para os idosos que acolhe, como roupas, produtos de higiene pessoal, fraldas geriátricas, alimentos não perecíveis, e roupas de cama (lençóis e cobertores). Essas doações ajudam a garantir o bem-estar e conforto dos idosos em situação de vulnerabilidade.
+                    </p>
+                    <button>Doar</button>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:30%;">
+                            <p class="porcentInfo"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="images/bfaa30a6916bf199491222e942919bdb.png" alt="img" draggable="false"></div>
+                    <h2>Sociedade de São Vicente de Paulo</h2>
+                    <div class="locate">
+                        <img src="images/2nLvm6tTwmS4koSaaaPwXLuxQ5W 1.svg" alt="">
+                        <span class="locate-text"> Itabira - MG</span>
+                    </div>
+                    <p>
+                        O Lar de Ozanam aceita doações de itens essenciais para os idosos que acolhe, como roupas, produtos de higiene pessoal, fraldas geriátricas, alimentos não perecíveis, e roupas de cama (lençóis e cobertores). Essas doações ajudam a garantir o bem-estar e conforto dos idosos em situação de vulnerabilidade.
+                    </p>
+                    <button>Doar</button>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:10%;">
+                            <p class="porcentInfo"></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="button-todas-as-campanhas">todas as campanhas</button>
+    </div>
+    <div class="container-quem-somos">
+        <div class="video">
+            <h2>seu video aqui</h2>
+        </div>
+    </div>
+       <!-- Footer -->
+    <footer>
+        <div class="footer-content" id="ajuda">
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fas fa-envelope"></i></a> <!--plataformarevitz@gmail.com-->
+            </div>
+            <div class="footer-text">
+                <p class="p1">Copyright © 2024 Revitz. Todos os direitos reservados.</p>
+                <p class="p2">Entidade sem fins lucrativos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--<script src="script.js"></script>-->
 </body>
 </html>

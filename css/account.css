@@ -1,0 +1,46 @@
+@import './footer.css';
+@import './header.css';
+
+:root {
+    --cor-fundo-header: #fff;
+    --font-primary:"Ubuntu", sans-serif ;
+    --font-title:"Poppins", sans-serif;
+    --radio-color: #3afd44;
+    --text-color: #768E6B;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.container-itens{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#lista-itens,
+#lista-pontos{
+    list-style: none;
+    padding-top: 1em;
+}
